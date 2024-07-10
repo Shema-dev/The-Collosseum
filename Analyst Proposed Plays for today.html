@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+       /* Your CSS styles go here */
+       .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+        .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+        .tg .tg-mzvv{background-color:#808080;border-color:inherit;color:#FFF;text-align:center;vertical-align:middle}
+        .tg .tg-7l4l{background-color:#ACB9CA;border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
+        .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-50mc{background-color:#808080;border-color:inherit;color:#FFF;font-weight:bold;text-align:center;vertical-align:middle}
+        .tg .tg-ywsr{background-color:#808080;border-color:inherit;text-align:center;vertical-align:middle}
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .tg td, .tg th {
+                font-size: 12px;
+            }
+            .tg .tg-7l4l {
+                font-size: 12px;
+            }
+            /* Adjust other styles as needed for smaller screens */
+        }
+
+        /* Set input width to 100% for better mobile experience */
+        input[type="text"],
+        select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-7l4l" colspan="25">LOW RISK PLAYS</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-ywsr" colspan="2"></td>
+            <td class="tg-mzvv" colspan="20">ENTER YOUR TARGET AMOUNT</td>
+            <td class="tg-c3ow" colspan="3">
+              <input type="text" contenteditable="true" id="target" pattern="^\d+(\.\d+)?(/\d+(\.\d+)?)?$" title="Please enter a number or a fraction." />
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-50mc" colspan="2" rowspan="4"></td>
+            <td class="tg-mzvv">PLAY</td>
+            <td class="tg-mzvv" colspan="3">RACE VENUE</td>
+            <td class="tg-mzvv" colspan="2">RACE #</td>
+            <td class="tg-mzvv" colspan="2">HORSE #</td>
+            <td class="tg-mzvv" colspan="3">HORSE NAME</td>
+            <td class="tg-mzvv" colspan="3">WIN/PLACE</td>
+            <td class="tg-mzvv" colspan="3">ODDS</td>
+            <td class="tg-mzvv" colspan="5">BET AMOUNT</td>
+          </tr>
+          <tr>
+            <td class="tg-9wq8">1</td>
+            <td class="tg-lboi" colspan="3" contenteditable="true" id="raceVenue1"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="raceNumber1"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="horseNumber1"></td>
+            <td class="tg-9wq8" colspan="3" contenteditable="true" id="horseName1"></td>
+            <td class="tg-9wq8" colspan="3">
+              <select id="winPlace1">
+                <option value="Win">Win</option>
+                <option value="Place">Place</option>
+              </select>
+            </td>
+            <td class="tg-c3ow" colspan="3">
+              <input type="text" contenteditable="true" id="odds1" pattern="^\d+(\.\d+)?(/\d+(\.\d+)?)?$" title="Please enter a number or a fraction." />
+            </td>
+            <td class="tg-c3ow" colspan="5" id="betAmount1"></td>
+          </tr>
+          <tr>
+            <td class="tg-9wq8">2</td>
+            <td class="tg-lboi" colspan="3" contenteditable="true" id="raceVenue2"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="raceNumber2"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="horseNumber2"></td>
+            <td class="tg-9wq8" colspan="3" contenteditable="true" id="horseName2"></td>
+            <td class="tg-9wq8" colspan="3">
+              <select id="winPlace2">
+                <option value="Win">Win</option>
+                <option value="Place">Place</option>
+              </select>
+            </td>
+            <td class="tg-c3ow" colspan="3">
+              <input type="text" contenteditable="true" id="odds2" pattern="^\d+(\.\d+)?(/\d+(\.\d+)?)?$" title="Please enter a number or a fraction." />
+            </td>
+            <td class="tg-c3ow" colspan="5" id="betAmount2"></td>
+          </tr>
+          <tr>
+            <td class="tg-9wq8">3</td>
+            <td class="tg-lboi" colspan="3" contenteditable="true" id="raceVenue3"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="raceNumber3"></td>
+            <td class="tg-9wq8" colspan="2" contenteditable="true" id="horseNumber3"></td>
+            <td class="tg-9wq8" colspan="3" contenteditable="true" id="horseName3"></td>
+            <td class="tg-9wq8" colspan="3">
+              <select id="winPlace3">
+                <option value="Win">Win</option>
+                <option value="Place">Place</option>
+              </select>
+            </td>
+            <td class="tg-c3ow" colspan="3">
+              <input type="text" contenteditable="true" id="odds3" pattern="^\d+(\.\d+)?(/\d+(\.\d+)?)?$" title="Please enter a number or a fraction." />
+            </td>
+            <td class="tg-c3ow" colspan="5" id="betAmount3"></td>
+          </tr>
+          <tr>
+            <td class="tg-ywsr" colspan="2"></td>
+            <td class="tg-mzvv" colspan="15">THIS IS YOUR REQUIRED BANK ROLL</td>
+            <td class="tg-c3ow" colspan="10" id="Odds_Output1"></td>
+          </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var ids = [
+            "target",
+            "raceVenue1", "raceNumber1", "horseNumber1", "horseName1", "winPlace1",
+            "raceVenue2", "raceNumber2", "horseNumber2", "horseName2", "winPlace2",
+            "raceVenue3", "raceNumber3", "horseNumber3", "horseName3", "winPlace3"
+        ];
+        function formatNumberWithCommas(numberString) {
+  // Convert the input string to a number
+  const number = parseFloat(numberString.replace(/,/g, ''));
+
+  // Check if the input is a valid number
+  if (isNaN(number)) {
+    console.error('Invalid number input');
+    return null;
+  }
+
+  // Format the number with commas
+  const formattedNumber = number.toLocaleString();
+
+  return formattedNumber;
+}
+        // Function to calculate the average of odds
+        function calculateAverageOdds() {
+            // Get the odds and target values
+            var odds1 = parseFloat(document.getElementById('odds1').value) ;
+            var odds2 = parseFloat(document.getElementById('odds2').value) ;
+            var odds3 = parseFloat(document.getElementById('odds3').value) ;
+            var target = parseFloat(document.getElementById('target').value);
+
+            // Calculate the Bet Amount
+            var betAmount1 = (target / 0.94 / odds1);
+            var betAmount2 = ((target + betAmount1) / 0.94 /odds2);
+            var betAmount3 = ((target + betAmount1 + betAmount2) / 0.94 /odds3);
+
+            // Calculate the Bank Roll
+            var bankRoll = betAmount1 + betAmount2 + betAmount3;
+
+            // Write the target and bet Amounts to Output
+            document.getElementById('Odds_Output1').innerText = formatNumberWithCommas(bankRoll.toFixed(2));
+            document.getElementById('betAmount1').innerText = formatNumberWithCommas(betAmount1.toFixed(2));
+           document.getElementById('betAmount2').innerText = formatNumberWithCommas(betAmount2.toFixed(2));
+            document.getElementById('betAmount3').innerText = formatNumberWithCommas(betAmount3.toFixed(2));
+            document.getElementById('target').innerText = formatNumberWithCommas(target.toFixed(2));
+        }
+
+        // Add event listeners to the odds and target inputs to calculate the average whenever their values change
+        document.getElementById('odds1').addEventListener('input', calculateAverageOdds);
+        document.getElementById('odds2').addEventListener('input', calculateAverageOdds);
+        document.getElementById('odds3').addEventListener('input', calculateAverageOdds);
+        document.getElementById('target').addEventListener('input', calculateAverageOdds);
+        document.get
+    </script>
+</body>
+</html>
+    
